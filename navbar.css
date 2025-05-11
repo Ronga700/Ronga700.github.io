@@ -1,0 +1,39 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    .nav-bar {
+      display: flex;
+      background-color: lightgray;
+      border: 2px solid black;
+    }
+
+    .nav-bar a {
+      flex: 1;
+      display: block;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .nav-bar a:hover {
+      background-color: darkgray;
+    }
+
+    @media(max-width:600px){
+      .nav-bar{
+        flex-direction: column;
+      }
+      body{
+        font-size: 16px;
+      }
+    }
